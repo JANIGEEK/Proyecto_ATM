@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <title>Retirar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="importarCuentas();"  >
+    <section>
+        <div class="box">
+            <div class="form">
+                <h1>Banco Electronico</h1>
+                <div class="divOper">
+                    <h2>Digite la cantidad que desea retirar</h2>
+                    <div class="inputbx">
+                        <input class="inputLogin" id="inputRetiro" type="number" onclick="activeInputSave(this);">
+                    </div>
+                    <div class="inputbx">
+                        <input type="button" value="Retirar" class="boton marginBtm" onclick="retirar();">
+                    </div>
+                    <div class="inputbx">
+                        <p class="bold" id="textoResultado" ></p>
+                    </div>
+                </div>
+                <div class="exit">
+                    <div class="inputbx">
+                        <input type="button" value="Salir" class="boton botonSalir" onclick="irA('index');">
+                        <input type="button" value="Anterior" class="boton botonSiguiente" onclick="irA('operaciones');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

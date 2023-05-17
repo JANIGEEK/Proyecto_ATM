@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositar</title>
+    <!--Enlace a formulas-->
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="importarCuentas();">
+    <section>
+        <div class="box">
+            <div class="form">
+                <h1>Banco Electronico</h1>
+                <div class="divOper">
+                    <h2>Digite la cantidad que desea depositar</h2>
+                    <div class="inputbx">
+                        <input class="inputLogin" id="inputDeposito" type="number" onclick="activeInputSave(this);">
+                    </div>
+                    <div class="inputbx">
+                        <input type="button" value="Depositar"  onclick="depositar();">
+                    </div>
+                    <div class="inputbx">
+                        <p class="bold" id="textoResultado"></p>
+                    </div>
+                </div>
+            
+            
+                    <div class="exit"> 
+                        <div class="inputbx">
+                            <input type="button" value="Salir" class="boton botonSalir" onclick="irA('index');">
+                            <input type="button" value="Anterior" class="boton botonSiguiente" onclick="irA('operaciones');">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

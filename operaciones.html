@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <title>Operaciones</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="importarCuentas();">
+      <section>
+        <div class="box">
+            <div class="form">
+                <h1>Bienvenido a su banco digital</h1>
+                <div class="divOper">
+                    <h2>¿Que operacion desea realizar?</h2>
+                    <div class="inputbx">
+                        <input type="button" value="Consultar Saldo" id="ConsultarS" class="btnOperacion" onclick="irA('consultarSaldo');">
+                    </div>
+                    <div class="inputbx">
+                        <input type="button" value="Ingresar Monto" id="IngrearS" class="btnOperacion" onclick="irA('depositar');">
+                    </div>
+                    <div class="inputbx">
+                        <input type="button" value="Retirar Monto" id="RetirarS" class="btnOperacion" onclick="irA('retirar');">
+                    </div>
+                </div>
+                <div class="exitPrin">
+                    <div class="inputbx">
+                        <input type="button" value="Salir" class="boton botonSalir" onclick="irA('index');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

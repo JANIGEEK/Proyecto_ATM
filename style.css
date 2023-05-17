@@ -1,0 +1,138 @@
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-30deg,#03a9f4 0%, #3a78b7 50%, #262626 50%, #687d8b 100%);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate{
+  0%{
+      filter: hue-rotate(0deg);
+  }
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
+
+.box{
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border-radius: 6px;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+
+.box::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%);
+}
+
+.box .form{
+  position: relative;
+  width: 100%;
+}
+
+h1{
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2{
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: medium;
+}
+
+
+.inputbx{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputbx input{
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  padding: 8px 10px;
+  padding-left: 15px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+}
+
+.inputbx input::placeholder{
+  color: #fff;
+}
+
+.inputbx input[type='button']{
+  background: #fff;
+  color: #111;
+  max-width: 100px;
+  padding: 8px 10px;
+  box-shadow: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.divOper .inputbx input[type='button']{
+  display: flex;
+  margin: auto auto;
+  max-width: 150px;
+}
+
+.divOper .inputbx .bold{
+  height: 92px;
+  width: 260px;
+  color: white;
+  text-align: center;
+}
+
+.exit .inputbx{
+  width: 210px;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+.exitPrin .inputbx{
+  width: 100px;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  margin-top: 40px;
+}
